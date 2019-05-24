@@ -1,0 +1,24 @@
+
+
+.custom-lbl {
+	color: #00b7d8;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 5px 0;
+    text-transform: none;
+}
+
+.ui.form .inline-form.field {
+	clear: none !important;
+}
+
+.requests .date input { 
+    border-radius: 3px 0 0 3px !important;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}

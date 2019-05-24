@@ -1,0 +1,211 @@
+*, *:focus {
+	outline: none!important;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Droid Arabic Kufi', sans-serif;
+    overflow-x:hidden;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");   
+}
+
+.ar-text{
+	text-align:right;
+    float: right;
+}
+.en-text{
+    float: left;
+	text-align:left;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+    direction: ltr;
+}
+.bill-wrap{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: 1px dashed #000;
+    border-radius: 5px;
+    background: #fff;
+    max-width: 1024px;
+    margin:50px auto;
+}
+
+.bill-wrap .bill-header{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px dashed #000;
+}
+.bill-wrap .bill-header .slogon{}
+.bill-wrap .bill-header .logo{
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.bill-wrap .bill-header .logo img{
+width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+    }
+.bill-wrap .bill-header .slogon span{
+    display: block;
+    position: relative;
+    font-weight: 600;
+    color: #000;
+    line-height: 22px;
+    font-size: 11px;
+}
+.bill-wrap .bill-header .slogon span:nth-child(1){
+	font-size: 15px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.bill-wrap .bill-info{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 5px auto 15px;
+    padding: 10px;
+    border-bottom: 1px dashed #000;
+}
+.bill-info .quantity{
+    padding: 0;
+    margin-top: 15px;
+    position: relative;
+}
+.bill-info .quantity span{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-align: center;
+}
+.bill-info .quantity span:last-child{
+    width: 80px;
+}
+.bill-info .quantity span:last-child:before{
+    content: "ريال سعودى ";
+    position: absolute;
+    top\: 0;
+    right: 0px;
+    top: -30px;
+    font-size: 10px;
+}
+.bill-title span{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+.bill-title span:last-child{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.bill-info .en-text{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+
+.bill-wrap .bill-content{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 10px;
+    margin: 5px auto;
+    font-weight: 600;
+    font-size: 12px;
+}
+.bill-wrap .bill-sign{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 10px;
+    border-top: 1px dashed #000;
+    margin-top: 10px;
+}
+.bill-sign-item{
+    display: block;
+    position: relative;
+    border-left: 1px solid #e8e8e8;
+}
+.bill-sign-item:last-child{
+    border-left: 0;
+}
+.bill-sign-item .bill-sign-title{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.bill-sign-item .user-sign{
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #545454;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bill-content{
+    overflow:hidden;
+    display: block;
+    margin-bottom: 5px;
+}
+.bill-content .ar-text{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+    height: 30px;
+    line-height: 30px;
+    min-width: 85px;
+}
+.bill-content .user-sign{
+    display: block;
+    position: relative;
+    width: calc(100% - 200px);
+    text-align: center;
+    margin: 0px 85px 0 185px;
+    height: 30px;
+    line-height: 30px;
+    background: #f9f9f9;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.bill-content .en-text{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+    height: 30px;
+    min-width: 115px;
+    line-height: 30px;
+}
+.tall-height{
+    height: 80px!important;
+}
+
+
+

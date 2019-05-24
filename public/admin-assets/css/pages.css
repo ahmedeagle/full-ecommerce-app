@@ -1,0 +1,313 @@
+/*General
+========================*/
+*, *:focus {
+	outline: none!important;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x:hidden;
+}
+#wrapper{
+	position: relative;
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main{
+    position: relative;
+    width: 100%;
+}
+.page-content{
+    position: relative;
+    width: 100%;
+    overflow-y: auto;
+}
+.theme-1{
+    background: #00b7d8;
+}
+.theme-2{
+    background: url(../images/bc.jpg) center center;
+    background-size: cover;
+}
+.theme-2 #welcome-home {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.75);
+}
+/*Buttons
+=============================*/
+.custom-btn{
+    display:block;
+    margin: 10px auto;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    text-align: center;
+    color: #fff;
+    background: #00b7d8;
+    font-size: 13px;
+    text-transform: uppercase;
+    border:0;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    transition: .3s all;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+.custom-btn:focus ,
+.custom-btn:hover{
+    color: #fff;
+    background:#58595b;
+    -webkit-transition: .3s all;
+       -moz-transition: .3s all;
+            transition: .3s all;
+    -webkit-box-shadow:none;
+       -moz-box-shadow:none;
+            box-shadow:none;
+}
+.logo{
+    display: block;
+    position: relative;
+    margin: 5px auto 10px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-weight:700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
+.form-box{
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+}
+.form-title{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    line-height:50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #00b7d8;
+    border-bottom: 1px solid #f1f1f1;
+    letter-spacing: 1px;
+}
+.login-form{
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+}
+.form-footer{
+    display: block;
+    position: relative;
+    text-align: center;
+    border-top: 1px solid #f1f1f1;
+    overflow: hidden;
+    padding: 0 15px;
+}
+.form-footer a{
+    float: right;
+    color: #00b7d8;
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #00b7d8;
+}
+.remmeber{
+    float: left;
+    margin-top: 10px;
+}
+.forget{
+    float:right;
+    color: #00b7d8;
+    text-decoration: underline;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.form-group{
+    overflow: hidden;
+    margin: 0;
+}
+.form-group .form-control {
+    display: block;
+    position: relative;
+    border: 1px solid #f1f1f1;
+    margin: 5px auto;
+    padding: 0 15px;
+    border-radius:0px;
+    height: 40px;
+    line-height:40px;
+    -webkit-box-shadow: none;  
+       -moz-box-shadow: none;
+            box-shadow: none;
+    outline: 0;
+    color: #1a1a1a;
+}
+.form-group .form-control:hover , 
+.form-group .form-control:focus {
+    outline: 0;
+    border:1px solid #00b7d8;
+    -webkit-box-shadow: none;  
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+.copy-rights{
+    display: block;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    margin:10px auto;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+input[type=radio], input[type=checkbox] {
+    display: none;
+}
+input[type=radio]+label, input[type=checkbox]+label {
+    position: relative;
+    width: auto!important;
+    margin: 0 0 0 0px!important;
+    padding-left: 25px;
+    cursor: pointer;
+    font-weight: 100;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+input[type=radio]+label::before, input[type=checkbox]+label::before {
+    content: "";
+    display: block;
+    text-align: center;
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    color: inherit;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+input[type=checkbox]+label::before {
+    top: 5px;
+}
+input[type=radio]+label::before {
+    border-radius: 50%
+}
+input[type=radio]+label:empty, input[type=checkbox]+label:empty {
+    width: 22px!important;
+    padding-right: 0;
+    margin: 0!important;
+}
+input[type=radio]:checked+label::before, input[type=checkbox]:checked+label::before {
+    content: '\f00c';
+    color: #3daaaf;
+}
+
+.lock-form{
+    display: block;
+    position: relative;
+    width: 330px;
+    margin:10px auto;
+    border: 1px solid #f4f4f4;
+    padding:20px 15px;
+    border-radius: 5px;
+    background: #fff;
+}
+.lock-form .profile-heading{
+    display: block;
+    position: relative;
+}
+.lock-form .profile-heading img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+.lock-form .profile-heading h3{
+    display: block;
+    position: relative;
+    line-height: 35px;
+    margin: 10px 0;
+    text-transform:capitalize;
+    font-size: 16px;
+    color: #2f9dca;
+    font-weight: 600;
+}
+
+.lock-form .form-group .form-control{
+    width: 200px;
+    float: left;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #00b7d8;
+}
+.lock-form .form-group .custom-btn{
+    float: left;
+    width: 95px;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 0 3px 3px 0px;
+}
+.error-wrap{}
+.error-wrap i{
+    font-size: 150px;
+    color: #fff;
+} 
+.error-wrap .num{
+    display: block;
+    position: relative;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin:10px auto;
+    font-weight: 600;
+    color: #fff;
+}
+.error-wrap .status{
+    display: block;
+    position: relative;
+    line-height: 40px;
+    text-transform:capitalize;
+    font-size: 30px;
+    margin:10px auto;
+    font-weight: 700;
+    color: #fff;
+}
+.error-wrap .custom-btn{
+    width: 140px;
+    background:#fff ;
+    color:#00b7d8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
